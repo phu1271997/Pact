@@ -61,7 +61,7 @@ const PRESET_CHARITIES: Charity[] = [
 ];
 
 export default function CharityPicker({ onSelect, selectedAddress }: CharityPickerProps) {
-  const [activeTab, setActiveTab] = useState<"charity" | "anticharity">("charity");
+  const [activeTab, setActiveTab] = useState("charity");
 
   const filteredPresets = PRESET_CHARITIES.filter((c) => c.type === activeTab);
 

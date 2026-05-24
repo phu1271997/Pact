@@ -13,7 +13,7 @@ interface VerificationTimelineProps {
 }
 
 export default function VerificationTimeline({ onComplete, status, verdictData }: VerificationTimelineProps) {
-  const [activeStep, setActiveStep] = useState<0 | 1 | 2 | 3>(0);
+  const [activeStep, setActiveStep] = useState(0);
 
   useEffect(() => {
     if (status !== "running") return;

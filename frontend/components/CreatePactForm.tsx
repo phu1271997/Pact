@@ -12,7 +12,7 @@ export default function CreatePactForm() {
   const { createPact, isMockMode, isConnected } = useGenLayer();
 
   // Step state
-  const [step, setStep] = useState<1 | 2>(1);
+  const [step, setStep] = useState(1);
 
   // Form states
   const [selectedTemplateId, setSelectedTemplateId] = useState<string>("code-streak");
