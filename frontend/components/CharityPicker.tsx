@@ -117,9 +117,13 @@ export default function CharityPicker({ onSelect, selectedAddress }: CharityPick
         <AlertCircle className={`h-4.5 w-4.5 mt-0.5 shrink-0 ${activeTab === 'anticharity' ? 'text-red-400' : 'text-emerald-400'}`} />
         <p>
           {activeTab === "anticharity" ? (
-            <strong>Extreme Psychological Pressure:</strong> "If you fail your commitment, your hard-earned funds will directly support an organization you absolutely oppose. Success is your only option."
+            <>
+              <strong>Extreme Psychological Pressure:</strong> If you fail your commitment, your hard-earned funds will directly support an organization you absolutely oppose. Success is your only option.
+            </>
           ) : (
-            <strong>Motivated by Goodwill:</strong> "Staking on yourself means if you fail, you make a positive impact by supporting a vital global humanitarian cause."
+            <>
+              <strong>Motivated by Goodwill:</strong> Staking on yourself means if you fail, you make a positive impact by supporting a vital global humanitarian cause.
+            </>
           )}
         </p>
       </div>

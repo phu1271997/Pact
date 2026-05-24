@@ -6,7 +6,7 @@ import { useGenLayer } from "@/lib/genlayer-client";
 import StakeProgressBar from "@/components/StakeProgressBar";
 import VerificationTimeline from "@/components/VerificationTimeline";
 import Link from "next/link";
-import { Calendar, ShieldAlert, Sparkles, Scale, Heart, Globe, ArrowLeft, Clock, FileText, CheckCircle } from "lucide-react";
+import { Calendar, ShieldAlert, Sparkles, Scale, Heart, Globe, ArrowLeft, Clock, FileText, CheckCircle, Coins } from "lucide-react";
 
 export default function PactDetailPage() {
   const params = useParams();
